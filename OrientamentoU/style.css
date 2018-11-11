@@ -1,0 +1,774 @@
+@font-face
+{
+    font-family: Comformaa;
+    src: url("http://localhost/OrientamentoU/font/comformaa.ttf");
+}
+
+body
+{
+    background-color:#EEEEEE;
+    color:white;
+    font-size:18px;
+    font-family:Comformaa,sans-serif;
+}
+
+a
+{
+    color:inherit;
+    text-decoration:underline;
+    transition:0.5s;
+}
+a:hover
+{
+    color:#AAAAAA;
+}
+
+#body
+{
+    margin-top:150px;
+    background-color:#EEEEEE;/*#222222*/
+    margin-left:-8px;
+    margin-right:-8px;
+    color:#8B0000;
+    font-family:inherit;
+}
+#body_ttt
+{
+    box-shadow:0px 0px 10px darkred;
+    transition:0.5s;
+}
+
+#menu
+{
+    //text-align:center;
+    height:100%;
+    width:100%;
+    max-width:1200px;
+    position:relative;
+}
+
+#menu_mobile
+{
+    display:block;
+    width:100%;
+    height:100%;
+    display:none;
+    transition:0.5s;
+}
+#show_menu
+{
+    width:100%;
+    border:0px solid transparent;
+    height:100%;
+    font:inherit;
+    font-size:20px;
+    color:whitesmoke;
+    background-color:transparent;
+    cursor:pointer;
+    transition:0.5s;
+}
+#hide_menu, .voci_menu_mobile
+{
+    width:100%;
+    border:0px solid transparent;
+    padding:20px;
+    font:inherit;
+    color:whitesmoke;
+    background-color:transparent;
+    cursor:pointer;
+}
+#hide_menu
+{
+    background-color:red;
+}
+#menu_mobile_panel
+{
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    right:0px;
+    left:0px;
+    width:auto;
+    height:auto;
+    display:none;
+    background-color:darkred;
+    z-index:1000;
+}
+
+#superiore
+{
+    background-color:#8B0000;
+    //background-image:url("http://localhost/OrientamentoU/img/menu_sfondo.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    color:darkred;
+    height:60px;
+    position:absolute;
+    top:90px;
+    right:0px;
+    left:0px;
+    text-align:center;
+    font-family:inherit;
+    box-shadow:0px 0px 5px #EEEEEE;
+    z-index:999;
+}
+#logo
+{
+    position:absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    width:auto;
+    height:90px;
+    background-color:#EEEEEE;
+    text-align:center;
+    transition:0.5s;
+}
+#icona, #superiore_menu_completo
+{
+    display:inline-block;
+    font-family:inherit;
+}
+#icona
+{
+    width:100px;
+    height:100%;
+    //background-color:#8B0000;
+    position:absolute;
+    text-align:right;
+    //background-color:yellow;
+    //transition:0.5s;
+}
+#icona img
+{
+    height:100%;
+}
+#superiore_menu_completo
+{
+    height:60px;
+    width:100%;
+    //background-color:red;
+}
+#superiore_menu_completo .bottone, #vai_al_sito
+{
+    background-color:#8B0000;
+    color:#EEEEEE;
+    font-size:20px;
+    font-family:inherit;
+    height:100%;
+    padding-left:20px;
+    padding-right:20px;
+    border:0px solid #8B0000;
+    cursor:pointer;
+    transition:0.5s;
+    font-weight:bold;
+}
+#superiore_menu_completo .bottone
+{
+    background-color:transparent;
+}
+#vai_al_sito
+{
+    width:100%;
+    height:60px;
+    opacity:.7;
+}
+#vai_al_sito:hover
+{
+    opacity:.95;
+}
+#superiore_menu_completo .bottone:hover
+{
+    background-color:#EEEEEE;
+    color:#8B0000;
+}
+#vai_al_sito:hover
+{
+    background-color:#6C0000;
+}
+
+#titolo
+{
+    width:auto;
+    padding:40px;
+    font-size:50px;
+    font-weight:bold;
+    text-align:center;
+    background-color:#EEEEEE;
+    color:#8B0000;
+    font-family:inherit;
+    border-bottom:10px solid #8B0000;
+    position:relative;
+}
+
+#immagini_slide, #mappa
+{
+    width:100%;
+    //padding:40px;
+    height:400px;
+    font-size:34px;
+    font-weight:bold;
+    text-align:center;
+    background-color:#8B0000;
+    color:#EEEEEE;
+    font-family:inherit;
+    
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    background-attachment:fixed;
+}
+#immagini_slide
+{
+    background-image:url("");
+}
+#mappa
+{
+    background-attachment:scroll;
+}
+
+h1.titolo
+{
+    padding:10px;
+    margin:0px;
+    font-size:34px;
+    font-weight:bold;
+    text-align:center;
+    background-color:#8B0000;
+    color:#EEEEEE;
+    font-family:inherit;
+}
+p.contenuto
+{
+    padding:20px;
+    margin:0px;
+}
+
+#dipartimenti, #corsi, #materie, #esami, #materie_esami, #servizi, #mappa, #come_arrivare, #docenti, #come_arrivare_docenti, #rettore, #alunni_noti, #potrebbe_interessarti_anche, #newsletter_universita, #storia_universita, #universita_in_regione
+{
+    width:100%;
+    font-size:20px;
+    text-align:left;
+    background-color:#EEEEEE;
+    color:#8B0000;
+    font-family:inherit;
+    clear:both;
+    transition:0.5s;
+}
+
+#materie, #esami, #come_arrivare, #docenti
+{
+    width:50%;
+    display:inline-block;
+    float:left;
+    clear:none;
+}
+
+#newsletter_universita
+{
+    margin-bottom:-8px;
+}
+
+#dipartimenti .bottone_sezione, #corsi .bottone_sezione, #segui_universita_bottone, #alunni_noti .bottone_sezione, #potrebbe_interessarti_anche .bottone_sezione, .bottone_light_cento
+{
+    cursor:pointer;
+}
+#dipartimenti .bottone_sezione:hover, #corsi .bottone_sezione:hover, #segui_universita_bottone:hover, #alunni_noti .bottone_sezione:hover, #potrebbe_interessarti_anche .bottone_sezione:hover, .bottone_light_cento:hover
+{
+    background-color:#BBBBBB;
+}
+
+.bottone_sezione, #segui_universita_bottone, .bottone_light_cento
+{
+    border:0px solid #EEEEEE;
+    background-color:#DDDDDD;
+    color:#8B0000;
+    font-family:inherit;
+    font-size:inherit;
+    padding:10px;
+    border-radius:5px;
+    margin:2px;
+    white-space:normal;
+    transition:0.5s;
+}
+#materie .bottone_sezione, #esami .bottone_sezione, #come_arrivare .bottone_sezione, #docenti .bottone_sezione, #rettore .bottone_sezione, potrebbe_interessarti_anche .bottone_sezione, .bottone_light_cento
+{
+    width:100%;
+}
+#contenuto
+{
+    padding:40px;
+    margin-bottom:-8px;
+    transition:0.5s;
+}
+
+#div_italia
+{
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    margin-bottom:-8px;
+}
+
+#mappa_italia_div
+{
+    text-align:center;
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    width:480px;
+    z-index:101;
+}
+#regione_hover_img
+{
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    background-position:center;
+    position:absolute;
+    z-index:100;
+    transition:0.5s;
+    cursor:pointer;
+    display:block;
+    opacity:0;
+}
+#regione_hover_img:hover
+{
+    transform:scale(1.2);
+}
+
+.immagine_universita_regione
+{
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    //background-attachment:fixed;
+    
+    width:auto;
+    margin-left:0px;
+    margin-right:0px;
+    height:500px;
+    position:relative;
+    
+    border-top:2px solid #8B0000;
+    transition:0.5s;
+}
+.nome_universita, .valutazione_universita_regione, .vedi_universita_button
+{
+    background-color:#EEEEEE;
+    color:#8B0000;
+    font-size:30px;
+    font-weight:bold;
+    padding:20px;
+    position:absolute;
+    top:100px;
+    right:100px;
+    opacity:0.8;
+    transition:0.5s;
+}
+.valutazione_universita_regione
+{
+    top:200px;
+}
+.vedi_universita_button
+{
+    background-color:#8B0000;
+    color:#EEEEEE;
+    border:0px solid #8B0000;
+    cursor:pointer;
+    font-family:inherit;
+    
+    top:300px;
+}
+.vedi_universita_button:hover
+{
+    opacity:.95;
+}
+
+#sfondo_nero
+{
+    opacity:.5;
+    background-color:#000000;
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    right:0px;
+    left:0px;
+    
+    z-index:1499;
+    display:none;
+}
+#div_login
+{
+    background-color:#EEEEEE;
+    color:#8B0000;
+    width:auto;
+    height:auto;
+    position:fixed;
+    top:15%;
+    bottom:15%;
+    left:20%;
+    right:20%;
+    
+    border-radius:20px;
+    padding:20px;
+    padding-top:50px;
+    border:1px solid #8B0000;
+    
+    z-index:1500;
+    display:none;
+}
+#chiudi_login
+{
+    background-color:#8B0000;
+    color:#EEEEEE;
+    border-radius:20px;
+    border:1px solid #8B0000;
+    top:2px;
+    right:2px;
+    position:absolute;
+    width:40px;
+    height:40px;
+    cursor:pointer;
+    transition:0.5s;
+    
+    background-image:url("http://localhost/OrientamentoU/img/close_button.png");
+    background-size:50% 50%;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+#table_accedi_registrati
+{
+    background-color:#EEEEEE;
+    color:#8B0000;
+    width:100%;
+    height:100%;
+    border:0px solid #EEEEEE;
+}
+#table_accedi_registrati td
+{
+    width:50%;
+    vertical-align:top;
+    text-align:center;
+    padding:20px;
+}
+.campo_login, .admin_txtbox
+{
+    background-color:#EEEEEE;
+    color:#8B0000;
+    margin-top:2px;
+    margin-bottom:2px;
+    font-size:16px;
+    border:0px solid #8B0000;
+    border-bottom:1px solid #8B0000;
+    width:100%;
+    padding:10px;
+    font-family:inherit;
+    margin-bottom:10px;
+    transition:0.5s;
+}
+.campo_login:focus, .admin_txtbox:focus
+{
+    border-bottom-width:5px;
+    padding-bottom:6px;
+    border-color:#6C0000;
+}
+.login_button, .admin_btt, .tutte_universita_btt
+{
+    background-color:#8B0000;
+    color:#EEEEEE;
+    margin-top:2px;
+    margin-bottom:2px;
+    font-size:16px;
+    border:0px solid #EEEEEE;
+    width:100%;
+    padding:10px;
+    font-family:inherit;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.5s;
+    border-radius:5px;
+    margin-bottom:10px;
+    white-space: normal;
+}
+.login_button:hover, #chiudi_login:hover, .admin_btt:hover, .tutte_universita_btt:hover
+{
+    background-color:#6C0000;
+}
+#storia
+{
+    min-width:100%;
+    max-width:100%;
+    min-height:200px;
+}
+hr
+{
+    background-color:#8B0000;
+    height:1px;
+    border:0px solid #8B0000;
+    width:auto;
+    margin:2px;
+}
+
+#registrati, #recuperopassword
+{
+    display:none;
+}
+#h1titolo
+{
+    margin:0px;
+}
+
+#body_add_admin
+{
+    width:60%;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    transition:0.5s;
+}
+
+div#darkred, div#whitesmoke, div#lightblue
+{
+    width:100%;
+    padding-top:40px;
+    padding-bottom:40px;
+    background-color:#8C0000;
+    font:inherit;
+    font-size:30px;
+    color:whitesmoke;
+}
+div#whitesmoke
+{
+    background-color:whitesmoke;
+    color:#8C0000;
+}
+div#lightblue
+{
+    background-color:#99DDFF;
+    color:#0072C6;
+}
+
+#contenuto_ricerca
+{
+    width:100%;
+    padding-top:159px;
+    padding-bottom:159px;
+    background-color:transparent;
+    background-image:url("http://localhost/OrientamentoU/img/search_sfondo.jpg");
+    background-position:center center;
+    background-size:cover;
+    margin-bottom:-8px;
+    transition:0.5s;
+    color:white;
+}
+#ricerca
+{
+    width:100%;
+    padding-top:100px;
+    padding-bottom:100px;
+    opacity:.8;
+    text-align:center;
+    position:relative;
+}
+#ricerca_sfondonero
+{
+    width:100%;
+    height:300px;
+    margin-top:-100px;
+    background-color:black;
+    opacity:.5;
+    text-align:center;
+    position:absolute;
+    z-index:4;
+}
+#ricerca #txt
+{
+    font:inherit;
+    font-size:18px;
+    width:600px;
+    border:0px solid white;
+    padding:20px;
+    background-color:white;
+    color:darkred;
+    transition:0.7s;
+    position:relative;
+    z-index:5;
+}
+#ricerca #btt
+{
+    font:inherit;
+    font-size:18px;
+    width:150px;
+    border:0px solid white;
+    padding:20px;
+    cursor:pointer;
+    background-color:white;
+    color:darkred;
+    transition:0.7s;
+    position:relative;
+    z-index:5;
+}
+#ricerca #txt:focus, #ricerca #btt:hover
+{
+    background-color:rgb(180,180,180);
+}
+
+#risultato
+{
+    font:inherit;
+    background-color:#8B0000;
+    text-align:center;
+    border-radius:20px;
+    padding:30px;
+    width:100%;
+    border:0px solid #8B0000;
+    color:white;
+    cursor:pointer;
+    margin:10px;
+    transition:0.5s;
+    white-space:normal;
+}
+#risultato:hover
+{
+    background-color:#6C0000;
+}
+
+#italiano_lingua, #inglese_lingua, #email_by_sm
+{
+    background-color:#8B0000;
+    color:whitesmoke;
+    font-size:20px;
+    border-radius:10px;
+    padding:20px;
+    margin:20px;
+    border:0px solid transparent;
+    cursor:pointer;
+    transition:0.5s;
+    font:inherit;
+}
+#email_by_sm
+{
+    background-color:#0072C6;
+    padding-left:40px;
+    padding-right:40px;
+}
+#italiano_lingua:hover, #inglese_lingua:hover
+{
+    background-color:#6C0000;
+}
+#email_by_sm:hover
+{
+    background-color:#2294E8;
+}
+
+a
+{
+    cursor:pointer;
+}
+
+#tutte_universita_account
+{
+    overflow-y:auto;
+    height:200px;
+    margin-top:0px;
+}
+
+#universita_in_regione p
+{
+    width:100%;
+    text-align:center;
+    font-size:50px;
+    font-weight:bold;
+}
+
+#cerca_per_label
+{
+    font:inherit;
+    font-size:18px;
+    width:100px;
+    padding:20px;
+    cursor:pointer;
+    background-color:transparent;
+    color:white;
+    transition:0.7s;
+    position:relative;
+    z-index:5;
+    top:5px;
+}
+.cerca_per
+{
+    font:inherit;
+    font-size:18px;
+    width:170px;
+    border:0px solid white;
+    padding:10px;
+    cursor:pointer;
+    background-color:white;
+    color:darkred;
+    transition:0.7s;
+    position:relative;
+    z-index:5;
+    top:5px;
+    margin-left:5px;
+}
+#cerca_per_uni
+{
+    background-color:#8B0000;
+    color:white;
+}
+
+
+#uni_ordina_per
+{
+    font:inherit;
+    font-size:18px;
+    width:170px;
+    border:0px solid white;
+    padding:10px;
+    cursor:pointer;
+    background-color:#8B0000;
+    color:white;
+    transition:0.7s;
+    position:absolute;
+    z-index:5;
+    top:45px;
+    right:20px;
+}
+#uni_ordina_per_panel
+{
+    font:inherit;
+    font-size:18px;
+    width:300px;
+    border:0px solid white;
+    padding:0px;
+    cursor:pointer;
+    background-color:#8B0000;
+    color:white;
+    position:absolute;
+    z-index:5;
+    top:86px;
+    right:20px;
+    box-shadow:0px 0px 4px #8B0000;
+    display:none;
+}
+.uni_ordina_per_voce
+{
+    font:inherit;
+    font-size:18px;
+    width:100%;
+    border:0px solid white;
+    padding:10px;
+    cursor:pointer;
+    background-color:#8B0000;
+    color:white;
+    transition:0.7s;
+}
+.uni_ordina_per_voce:hover
+{
+    background-color:#6C0000;
+}
